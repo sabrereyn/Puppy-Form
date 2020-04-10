@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Form</title>
+
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Pet Match Form</h1>
+            <p id="description">Fill out this form to find your perfect puppy match</p>
+        </div>
+
+        <div id="survey">
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name </label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" id="email-label">Email </label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number" id="number-label">Age <span class="hint"> (optional)</span></label>
+                    <input type="number" id="number" class="form-control" placeholder="Enter your age" min="18" max="99">
+                </div>
+
+                <div class="form-group">
+                    <label for="dropdown">For what reason do you want a dog?</label>
+                    <select name="reason" id="dropdown" class="form-control" required>
+                        <option disabled selected>Select one</option>
+                        <option value="guard">Guard Dog</option>
+                        <option value="exercise">Exercise Buddy</option>
+                        <option value="companion">Companion</option>
+                        <option value="emotion">Emotional Support</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-font">
+                    <p>What weight group are you looking for?</p>
+
+                    <label for="xSmall">
+                        <input type="radio" name="weight" id="xSmall" class="inputRadio">
+                        &lt 15 lbs
+                    </label>
+
+                    <label for="small">
+                        <input type="radio" name="weight" id="small" class="inputRadio">
+                        15 lbs &gt and &lt 25 lbs
+                    </label>
+
+                    <label for="medium">
+                        <input type="radio" name="weight" id="medium" class="inputRadio">
+                        25 lbs &gt and &lt 50 lbs
+                    </label>
+
+                    <label for="large">
+                        <input type="radio" name="weight" id="large" class="inputRadio">
+                        50 lbs &gt and &lt 75 lbs
+                    </label>
+
+                    <label for="xLarge">
+                        <input type="radio" name="weight" id="xLarge" class="inputRadio">
+                        75 lbs &gt
+                    </label>
+                </div>
+
+                <div class="form-group form-font">
+                    <p>What type of traits are you looking for in your puppy? <span class="hint">Choose up to three</span></p>
+
+                    <label for="energetic">
+                        <input type="checkbox" name="trait" value="energetic" id="energetic" class="inputCheck"> Energetic
+                    </label>
+
+                    <label for="intelligent">
+                        <input type="checkbox" name="trait" value="intelligent" id="intelligent" class="inputCheck"> Intelligent
+                    </label>
+
+                    <label for="loyal">
+                        <input type="checkbox" name="trait" value="loyal" id="loyal" class="inputCheck"> Loyal
+                    </label>
+
+                    <label for="work">
+                        <input type="checkbox" name="trait" value="workaholic" id="work" class="inputCheck"> Workaholic
+                    </label>
+
+                    <label for="athletic">
+                        <input type="checkbox" name="trait" value="athletic" id="athletic" class="inputCheck"> Athletic
+                    </label>
+
+                    <label for="affectionate">
+                        <input type="checkbox" name="trait" value="affectionate" id="affectionate" class="inputCheck"> Affectionate
+                    </label>
+
+                    <label for="independent">
+                        <input type="checkbox" name="trait" value="independent" id="independent" class="inputCheck"> Independent
+                    </label>
+
+                    <label for="social">
+                        <input type="checkbox" name="trait" value="social" id="social" class="inputCheck"> Social
+                    </label>
+
+                    <label for="calm">
+                        <input type="checkbox" name="trait" value="calm" id="calm" class="inputCheck"> Calm
+                    </label>
+
+                    <label for="funny">
+                        <input type="checkbox" name="trait" value="funny" id="funny" class="inputCheck"> Funny
+                    </label>
+
+                    <label for="cautious">
+                        <input type="checkbox" name="trait" value="cautious" id="cautious" class="inputCheck"> Cautious
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Enter any additional information that might be important</p>
+                    <textarea name="comments" id="textComments" cols="30" rows="5" placeholder="Enter information..."></textarea>
+                </div>
+
+                <button type="submit" class="submitButton">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
